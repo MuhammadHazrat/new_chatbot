@@ -5,7 +5,7 @@ classifier = pipeline("zero-shot-classification", model="typeform/distilbert-bas
 
 app = Flask(__name__)
 
-app.port(5001)
+
 @app.route('/', methods=['POST', 'GET'])
 def chat():
     sequence_to_classify = request.args.get('line')
@@ -22,6 +22,7 @@ def chat():
 
     print(response)
     return response
+
 
 if __name__ == '__main__':
     app.run(debug=True)
