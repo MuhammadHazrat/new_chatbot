@@ -1,5 +1,5 @@
 flask
-gunicorn
+gunicorn=19.9.0
 transformers
 
 
