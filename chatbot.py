@@ -1,9 +1,13 @@
+import os
+
 from flask import Flask, request
 # from transformers import pipeline
 
 # classifier = pipeline("zero-shot-classification", model="typeform/distilbert-base-uncased-mnli")
 
 app = Flask(__name__)
+
+port = int(os.environ.get('PORT', 5000))
 
 
 @app.route('/', methods=['POST', 'GET'])
@@ -29,4 +33,4 @@ def hello():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=port)
