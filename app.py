@@ -12,7 +12,8 @@ app = Flask(__name__)
 
 @app.route('/', methods=['POST', 'GET'])
 def hello():
-    return "hello hamza bhaaiiiiiiii"
+    input = request.args.get('line')
+    return f"Your name is: {input}"
 
 
 # def chat():
