@@ -12,7 +12,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['POST', 'GET'])
 def hello():
-    return "hello rathi"
+    return "hello hamza bhaaiiiiiiii"
 
 
 # def chat():
