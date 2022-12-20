@@ -1,6 +1,7 @@
 flask
 gunicorn
 transformers
+pytorch
 
 
 
