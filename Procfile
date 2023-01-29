@@ -1,2 +1,1 @@
-worker: python3 chatbot.py
-web: gunicorn app:app
+web: gunicorn -w 2 -k uvicorn.workers.UvicornWorker fastapi_app:app
