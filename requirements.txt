@@ -1,7 +1,4 @@
-flask
+fastapi
 gunicorn
-transformers
-tensorflow-cpu
-
-
-
+joblib
+uvicorn
