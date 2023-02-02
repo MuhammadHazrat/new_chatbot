@@ -27,6 +27,9 @@ def join_big_pieces(filename, file_extension):
             outfile.write(chunk)
         os.remove("temp2.joblib")
 
-join_first_two_pieces("joblib_classifier", ".joblib")
-join_last_two_pieces("joblib_classifier", ".joblib")
-join_big_pieces("joblib_classifier", ".joblib")
+def run_code():
+    join_first_two_pieces("joblib_classifier", ".joblib")
+    join_last_two_pieces("joblib_classifier", ".joblib")
+    join_big_pieces("joblib_classifier", ".joblib")
+
+run_code()
