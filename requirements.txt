@@ -2,3 +2,4 @@ fastapi
 gunicorn
 joblib
 uvicorn
+transformers
