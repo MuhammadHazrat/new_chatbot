@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from joblib import load
-import splitter
-
-splitter.run_code()
+# import splitter
+#
+# splitter.run_code()
 
 # Load the classifier from the binary file
 classifier = load("joblib_classifier.joblib")
